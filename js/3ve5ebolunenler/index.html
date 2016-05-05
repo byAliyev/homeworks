@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1-200 arası 3 və 5-ə bölünənlər</title>
+	<style>
+		span {
+			background: #FF8A65;
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+			font-style: italic;
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		ul > li {
+			display: inline-block;
+			padding: 10px;
+			border: 1px solid #ddd;
+			background: #FF8A65;
+			color: #fff;
+		}
+		ul li:hover {
+			background: #fff;
+			color: #FF8A65;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function bol(){
+			document.write("<span>1-200 arası həm 3-ə həmdə 5-ə bölünən ədədlər :</span><br>");
+			document.write("<ul>");
+			for(a=1;a<=200;a++){
+				if((a%3 == 0) && (a%5 == 0)){
+					document.write("<li><strong>"+a+"</strong></li>");
+				}
+			}
+			document.write("</ul>");
+		}
+		bol();
+	</script>
+</body>
+</html>

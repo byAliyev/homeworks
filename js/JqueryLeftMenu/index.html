@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LeftMenu</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0-beta.1/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+	<div class="main">
+		<div class="leftMenu">
+			<h1>Menu</h1>
+			<ul>
+				<li><a id="#home">Home</a></li>
+				<li><a id="#about">About</a></li>
+				<li><a id="#blog">Blog</a></li>
+				<li><a id="#portfolio">Portfolio</a></li>
+				<li><a id="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<div id="open"></div>
+		<div id="close"></div>
+		<div class="content">
+			<div class="section" id="home">
+				<h1>Home</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa id earum, aperiam, eos voluptatibus enim porro laudantium molestiae, non, sed ex laboriosam! Reprehenderit obcaecati, voluptate culpa quidem unde necessitatibus quis.</p>
+			</div>
+			<div class="section" id="about">
+				<h1>About</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa id earum, aperiam, eos voluptatibus enim porro laudantium molestiae, non, sed ex laboriosam! Reprehenderit obcaecati, voluptate culpa quidem unde necessitatibus quis.</p>
+			</div>
+			<div class="section" id="blog">
+				<h1>Blog</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa id earum, aperiam, eos voluptatibus enim porro laudantium molestiae, non, sed ex laboriosam! Reprehenderit obcaecati, voluptate culpa quidem unde necessitatibus quis.</p>
+			</div>
+			<div class="section" id="portfolio">
+				<h1>Portfolio</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa id earum, aperiam, eos voluptatibus enim porro laudantium molestiae, non, sed ex laboriosam! Reprehenderit obcaecati, voluptate culpa quidem unde necessitatibus quis.</p>
+			</div>
+			<div class="section" id="contact">
+				<h1>Contact</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa id earum, aperiam, eos voluptatibus enim porro laudantium molestiae, non, sed ex laboriosam! Reprehenderit obcaecati, voluptate culpa quidem unde necessitatibus quis.</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var contentDivHeight = $(window).innerHeight();
+		$(".leftMenu").css("height", contentDivHeight);
+		$(".section").css("height", contentDivHeight);
+
+
+		$(".leftMenu ul li a").on("click",get);
+		function get(){
+			var sehife = $(this).attr("id"); 
+			$("body").stop().animate({'scrollTop': $(sehife).offset().top},2000,'swing');
+		}
+		$("#close").hide();
+		$("#open").click(function(){
+			$(".leftMenu").animate({ marginLeft: '0'}, 500);
+			$(".content").animate({ marginLeft: '200px',marginRight: '-200px'}, 500);
+			$("#open").animate({ marginLeft: '0'}, 500).hide();
+			$("#close").animate({ marginLeft: '200px'}, 500).show();
+		});
+		$("#close").click(function(){
+			$(".leftMenu").animate({ marginLeft: '-200px'}, 500);
+			$(".content").animate({ marginLeft: '0'}, 500);
+			$("#close").animate({ marginLeft: '0'}, 500).hide(1);
+			$("#open").animate({ marginLeft: '0'}, 500).show(1);
+		});
+	</script>
+</body>
+</html>

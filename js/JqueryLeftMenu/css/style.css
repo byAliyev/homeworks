@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Raleway";
+}
+/* Esas div */
+.main {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Menu */
+
+.leftMenu {
+	background: #68696a;
+	width: 200px;
+	position: fixed;
+	margin-left: -200px;
+}
+.leftMenu h1 {
+	text-align:  center;
+	background: #e6e6e6;
+	font-weight: 900;
+	font-size: 40px;
+	padding: 15px 0;
+}
+.leftMenu ul {
+	list-style-type: none;
+}
+.leftMenu ul li {
+	text-align: center;
+}
+.leftMenu ul li a{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	box-sizing: border-box;
+}
+.leftMenu ul li a:hover {
+	background: #191c23;
+}
+
+/* Ac Bagla */
+
+#open {
+	width: 30px;
+	;height: 30px;
+	border-radius: 5px;
+	background: url(../images/open.png);
+	background-size:  100% 100%;
+	border: 1px solid black;
+	margin-left:0;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+}
+
+#close {
+	width: 30px;
+	;height: 30px;
+	border-radius: 5px;
+	background: url(../images/close.png);
+	background-size:  100% 100%;
+	border: 1px solid black;
+	margin-left:0;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+}
+
+/* Content */
+
+.content {
+	width: 100%;
+	background: red;
+	margin-left: 0;
+}
+.section {
+	color: red;
+	font-size: 20px;
+}
+.section h1 {
+	margin: 0 80px;
+	color: #000;
+	font-weight: 900;
+}
+.section p {
+	width: 400px;
+	margin: 40px 40px;
+	color: #000;
+	font-weight: 500;
+}
+#home {
+	background: url(../images/5.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#about {
+	background: gray;
+	text-align: right;
+}
+#blog {
+	background: blue;
+}
+#portfolio {
+	background: pink;
+	text-align: right;
+}
+#contact {
+	color: #fff;
+}

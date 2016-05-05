@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="main">
+		<div class="left" onclick="left();">
+			<a href="#"><i class="fa fa-chevron-left"></i></a>
+		</div>
+		<div class="middle">
+			<div class="header">
+				<img id="bigImg" src="images/1.jpg">
+			</div>
+			<div class="list">
+				<div class="listItem"><img onclick="slider.img1();" src="images/1.jpg"></div>
+				<div class="listItem"><img onclick="slider.img1();" src="images/2.jpg"></div>
+				<div class="listItem"><img onclick="slider.img1();" src="images/3.jpg"></div>
+				<div class="listItem"><img onclick="slider.img1();" src="images/4.jpg"></div>
+			</div>
+		</div>
+		<div class="right">
+			<a href="#" onclick="right();"><i class="fa fa-chevron-right"></i></a>
+		</div>
+	</div>
+
+	<!-- JavaScript Kodları-->
+	<script>
+		var imglist = ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"];
+		a = 0;
+		function right(){
+			a++;
+			if(a > imglist.length - 1){
+				a = 0;
+			}
+			document.getElementById("bigImg").src=imglist[a];
+		}
+		function left(){
+			a--;
+			if(a < 0){
+				a = imglist.length - 1;
+			}
+			document.getElementById("bigImg").src=imglist[a];
+		}
+		var slider = {
+			img1: 	function bax(){
+						a=0;
+						document.getElementById("bigImg").src=imglist[a];
+					}, //vergul olmalidi her obyekt elementinden sonra
+			img2:	function bax1(){
+						a=1;
+						document.getElementById("bigImg").src=imglist[a];
+					},
+			img3:	function bax2(){
+						a=2;
+						document.getElementById("bigImg").src=imglist[a];
+					},
+			img4: 	function bax3(){
+						a=3;
+						document.getElementById("bigImg").src=imglist[a];
+					}
+			}
+	</script>
+</body>
+</html>

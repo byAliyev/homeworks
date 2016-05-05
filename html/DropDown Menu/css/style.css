@@ -1,0 +1,111 @@
+/*
+	Sıfırlama
+*/
+* {
+	font-family: "Raleway";
+	color: #fff;
+}
+
+.menu ul,
+.menu li,
+.menu a {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-decoration: none;
+	list-style-type: none;
+}
+/*
+	Menu
+*/
+.menu {
+  line-height: 0;
+  border-radius: 5px 5px 0 0;
+  background: #00BCD4;
+  border-bottom: 2px solid #F50057;
+  font-weight: 600;
+}
+.menu:after,
+.menu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.menu a {
+  background: #00BCD4;
+  display: block;
+  padding: 19px 20px;
+}
+.menu > ul > li {
+	display: inline-block;
+  	float: left;
+  	margin: 0;
+}
+.menu > ul > li:hover:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #E91E63;
+  margin-left: -10px;
+ }
+ .menu > ul > li:first-child > a {
+  border-radius: 5px 0 0 0;
+}
+.menu > ul > li.active > a,
+.menu > ul > li:hover > a {
+  background: #4DD0E1;
+}
+.menu .dropBir {
+  z-index: 1;
+}
+.menu .dropBir:hover > ul {
+  display: block;
+}
+.menu .dropBir ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  left: 0;
+}
+.menu .dropBir ul li a {
+  background: #E91E63;
+  border-bottom: 1px solid #31b7f1;
+  font-size: 11px;
+  display: block;
+  line-height: 120%;
+  padding: 10px;
+}
+.menu .dropBir ul li:hover a {
+  background: #C2185B;
+}
+.menu .dropBir .dropBir:hover > ul {
+  display: block;
+}
+.menu .dropBir .dropBir ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.menu .dropBir .dropBir ul li a {
+  background: #C2185B;
+  border-bottom: 1px solid #31b7f1;
+}
+.menu .dropBir .dropBir ul li a:hover {
+  background: #E91E63;
+}
+.menu ul ul li.last > a,
+.menu ul ul li:last-child > a,
+.menu ul ul ul li.last > a,
+.menu ul ul ul li:last-child > a,
+.menu .dropBir ul li:last-child > a,
+.menu .dropBir ul li.last > a {
+  border-bottom: 0;
+}

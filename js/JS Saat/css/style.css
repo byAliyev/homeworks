@@ -1,0 +1,160 @@
+.main , .header{
+    width:  100%;
+}
+.header {
+    display: block;
+    height: 360px;
+    background: #00BCD4;
+}
+.saat {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #00BCD4; 
+    border: 20px solid #fff;
+    margin: auto;
+    margin-top: -150px;
+    position: relative;
+}
+.saat ul {
+    list-style-type: none;
+}
+.saat ul > li.mDot {
+    width: 5px;
+    height: 15px;
+    background: #fff;
+}
+.saat ul li {
+  display:block;
+  width: 3px;
+  height: 10px;
+  background: #fff;
+  position:absolute;
+  top:50%; 
+  left:50%;
+  margin:-.4em 0 0 -.1em;
+}
+.saat ul li:first-child {transform:rotate(0deg) translateY(-10em)}
+.saat ul li:nth-child(2) {transform:rotate(6deg) translateY(-10em)}
+.saat ul li:nth-child(3) {transform:rotate(12deg) translateY(-10em)}
+.saat ul li:nth-child(4) {transform:rotate(18deg) translateY(-10em)}
+.saat ul li:nth-child(5) {transform:rotate(24deg) translateY(-10em)}
+.saat ul li:nth-child(6) {transform:rotate(30deg) translateY(-10em)}
+.saat ul li:nth-child(7) {transform:rotate(36deg) translateY(-10em)}
+.saat ul li:nth-child(8) {transform:rotate(42deg) translateY(-10em)}
+.saat ul li:nth-child(9) {transform:rotate(48deg) translateY(-10em)}
+.saat ul li:nth-child(10) {transform:rotate(54deg) translateY(-10em)}
+.saat ul li:nth-child(11) {transform:rotate(60deg) translateY(-10em)}
+.saat ul li:nth-child(12) {transform:rotate(66deg) translateY(-10em)}
+.saat ul li:nth-child(13) {transform:rotate(72deg) translateY(-10em)}
+.saat ul li:nth-child(14) {transform:rotate(78deg) translateY(-10em)}
+.saat ul li:nth-child(15) {transform:rotate(84deg) translateY(-10em)}
+.saat ul li:nth-child(16) {transform:rotate(90deg) translateY(-10em)}
+.saat ul li:nth-child(17) {transform:rotate(96deg) translateY(-10em)}
+.saat ul li:nth-child(18) {transform:rotate(102deg) translateY(-10em)}
+.saat ul li:nth-child(19) {transform:rotate(108deg) translateY(-10em)}
+.saat ul li:nth-child(20) {transform:rotate(114deg) translateY(-10em)}
+.saat ul li:nth-child(21) {transform:rotate(120deg) translateY(-10em)}
+.saat ul li:nth-child(22) {transform:rotate(126deg) translateY(-10em)}
+.saat ul li:nth-child(23) {transform:rotate(132deg) translateY(-10em)}
+.saat ul li:nth-child(24) {transform:rotate(138deg) translateY(-10em)}
+.saat ul li:nth-child(25) {transform:rotate(144deg) translateY(-10em)}
+.saat ul li:nth-child(26) {transform:rotate(150deg) translateY(-10em)}
+.saat ul li:nth-child(27) {transform:rotate(156deg) translateY(-10em)}
+.saat ul li:nth-child(28) {transform:rotate(162deg) translateY(-10em)}
+.saat ul li:nth-child(29) {transform:rotate(168deg) translateY(-10em)}
+.saat ul li:nth-child(30) {transform:rotate(174deg) translateY(-10em)}
+.saat ul li:nth-child(31) {transform:rotate(180deg) translateY(-10em)}
+.saat ul li:nth-child(32) {transform:rotate(186deg) translateY(-10em)}
+.saat ul li:nth-child(33) {transform:rotate(192deg) translateY(-10em)}
+.saat ul li:nth-child(34) {transform:rotate(198deg) translateY(-10em)}
+.saat ul li:nth-child(35) {transform:rotate(204deg) translateY(-10em)}
+.saat ul li:nth-child(36) {transform:rotate(210deg) translateY(-10em)}
+.saat ul li:nth-child(37) {transform:rotate(216deg) translateY(-10em)}
+.saat ul li:nth-child(38) {transform:rotate(222deg) translateY(-10em)}
+.saat ul li:nth-child(39) {transform:rotate(228deg) translateY(-10em)}
+.saat ul li:nth-child(40) {transform:rotate(234deg) translateY(-10em)}
+.saat ul li:nth-child(41) {transform:rotate(240deg) translateY(-10em)}
+.saat ul li:nth-child(42) {transform:rotate(246deg) translateY(-10em)}
+.saat ul li:nth-child(43) {transform:rotate(252deg) translateY(-10em)}
+.saat ul li:nth-child(44) {transform:rotate(258deg) translateY(-10em)}
+.saat ul li:nth-child(45) {transform:rotate(264deg) translateY(-10em)}
+.saat ul li:nth-child(46) {transform:rotate(270deg) translateY(-10em)}
+.saat ul li:nth-child(47) {transform:rotate(276deg) translateY(-10em)}
+.saat ul li:nth-child(48) {transform:rotate(282deg) translateY(-10em)}
+.saat ul li:nth-child(49) {transform:rotate(288deg) translateY(-10em)}
+.saat ul li:nth-child(50) {transform:rotate(294deg) translateY(-10em)}
+.saat ul li:nth-child(51) {transform:rotate(300deg) translateY(-10em)}
+.saat ul li:nth-child(52) {transform:rotate(306deg) translateY(-10em)}
+.saat ul li:nth-child(53) {transform:rotate(312deg) translateY(-10em)}
+.saat ul li:nth-child(54) {transform:rotate(318deg) translateY(-10em)}
+.saat ul li:nth-child(55) {transform:rotate(324deg) translateY(-10em)}
+.saat ul li:nth-child(56) {transform:rotate(330deg) translateY(-10em)}
+.saat ul li:nth-child(57) {transform:rotate(336deg) translateY(-10em)}
+.saat ul li:nth-child(58) {transform:rotate(342deg) translateY(-10em)}
+.saat ul li:nth-child(59) {transform:rotate(348deg) translateY(-10em)}
+.saat ul li:nth-child(60) {transform:rotate(354deg) translateY(-10em)}
+.saatEqreb {
+    width: 10px;
+    height: 80px;
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: top center;
+}
+.saatBox, .deqiqeBox, .saniyeBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.deqiqeEqreb {
+    width: 8px;
+    height: 110px;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform-origin: 30% 100%;
+    transform: rotate(270deg);
+}
+.saniyeEqreb {
+    width: 3px;
+    height: 140px;
+    background: red;
+    border-radius: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: top center;
+    z-index: 8;
+    transform: rotate(25deg);
+}
+.orta {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 46.5%;
+    top: 46.5%;
+    z-index: 9;
+}
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.saatBox {
+  animation: rotate 43200s infinite linear;
+}
+.deqiqeBox {
+  animation: rotate 3600s infinite linear;
+}
+.saniyeBox {
+  animation: rotate 60s infinite linear;
+}

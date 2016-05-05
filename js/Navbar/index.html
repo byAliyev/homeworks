@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Navbar</title>
+	<style>
+		ul {
+			list-style: none;
+		}
+		li {
+			display: inline-block;
+		}
+		ul >li:first-child a{
+			border-radius: 5px 0 0 0;
+
+		}
+		ul >li:last-child a{
+			border-radius: 0 5px 0 0;
+
+		}
+		a {	
+			background: red;
+			color: #fff;
+			padding: 10px 15px;
+			text-decoration: none;
+		}
+		a:hover {	
+			background: #fff;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var link = ["http://google.com","http://gmail.com","http://code.edu.az","http://udemy.com","http://facebook.com"];
+		var menu = ["Google","Gmail","CodeAcademy","Udemy","Facebook"];
+			document.write("<ul>");
+			for(i=0;i<menu.length;i++){
+				document.write('<li><a href="'+link[i]+'">'+menu[i]+'</a></li>');
+			}
+			document.write("</ul>");
+	</script>
+</body>
+</html>

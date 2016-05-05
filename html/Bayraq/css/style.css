@@ -1,0 +1,150 @@
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+.bayraq {
+	margin: 100px 100px;
+	width: 1200px;
+	height: 600px;
+}
+.goy {
+	width: 100%;
+	height: 200px;
+	background-color: #00b5e2;
+}
+.qirmizi {
+	height: 200px;
+	background-color:#e00034;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+.yasil {
+	width: 100%;
+	height: 200px;
+	background-color: #509e2f;
+}
+.ay {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: white;
+	position: relative;
+	margin-top: 2px;
+	left: 480px;
+	display: inline-block;
+}
+.ay2 {
+	width: 170px;
+	height: 170px;
+	border-radius:50%;
+	background-color: #e00034;
+	position: relative;
+	left: 310px;
+	bottom: 15px;
+	display: inline-block;
+}
+.u1{
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 10px 30px 10px;
+border-color: transparent transparent white transparent;
+position:relative;
+top:36px;
+left: 156px;
+z-index:2;
+}
+.u2{
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 10px 30px 10px;
+border-color: transparent transparent white transparent;
+position:relative;
+top:17px;
+left: 183px;
+z-index:2;
+transform: rotate(45deg);
+}
+.u3{
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 10px 30px 10px;
+border-color: transparent transparent white transparent;
+position:relative;
+top: -13px;
+left: 130px;
+z-index:2;
+transform: rotate(-45deg);
+}
+.u4{
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 10px 30px 10px;
+border-color: transparent transparent white transparent;
+position:relative;
+top:-15px;
+left: 194.5px;
+z-index:2;
+transform: rotate(90deg);
+}
+.u5{
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 10px 30px 10px;
+border-color: transparent transparent white transparent;
+position:relative;
+top:-45px;
+left: 118.5px;
+z-index:2;
+transform: rotate(-90deg);
+}
+.u6{
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 10px 30px 10px;
+border-color: transparent transparent white transparent;
+position:relative;
+top:-47px;
+left: 183px;
+z-index:2;
+transform: rotate(135deg);
+}
+.u7{
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 10px 30px 10px;
+border-color: transparent transparent white transparent;
+position:relative;
+top:-77px;
+left: 130px;
+z-index:2;
+transform: rotate(-135deg);
+}
+.u8{
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 10px 30px 10px;
+border-color: transparent transparent white transparent;
+position:relative;
+top:-96px;
+left: 156px;
+z-index:2;
+transform: rotate(-180deg);
+}
+.orta {
+	width: 46px;
+	height: 48px;
+	background: #fff;
+	position: relative;
+	top: -174px;
+	left: 143.5px;
+}

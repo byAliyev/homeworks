@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Divin içini rəngli divlərlə doldurmaq</title>
+	<style>
+		div {
+			margin: 0;
+			padding: 0;
+			float: left;
+		}
+		.main {
+			width: 1000px;
+			height: auto;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write('<div class="main">');
+			function divYarat(say){
+				for(i=0,a=254,b=0,c=50;i<say,a<255,b<255,c<255;i++,a=a-1,b=b+1,c=c+1){	   if(i<say){
+							document.write('<div style="width:100px; height:100px; background: rgb('+a+','+b+','+c+')">Rengli Div</div>');
+						}
+					}
+			}
+			divYarat(5);
+		document.write('</div>');
+	</script>
+</body>
+</html>

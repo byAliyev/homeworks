@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Şahmat Məsələsi</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Ümumi buğdanın sayı
+		a = 1; //bir xanaya dusen bugda sayi
+		b = 1; // umumi bugda
+		for(i=1;i<64;i++){
+			a = 2*a;
+			b = b+a;
+		}
+		document.write("<strong>Ümumi buğda sayı:</strong> "+b+"<br>");
+		c = b*31; // bugdanin cekisi qramla
+		document.write("<strong>Ümumi çəki (qr) :</strong> "+c+"<br>");
+		d = (b*31)/1000; // bugdanin cekisi kiloqramla
+		document.write("<strong>Ümumi çəki (kq) :</strong> "+d+"<br>");
+		e = ((b*31)/1000)/1000; // bugdanin cekisi tonla
+		document.write("<strong>Ümumi çəki (ton) :</strong> "+e+"<br>");
+	</script>
+</body>
+</html>

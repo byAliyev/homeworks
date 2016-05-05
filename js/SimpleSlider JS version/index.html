@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Js Slider</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- JavaScript Kodları -->
+
+	<script>
+		// Main div 
+		var mainDiv = document.createElement("div");
+		mainDiv.setAttribute("class", "main");
+		document.body.appendChild(mainDiv);
+
+		// Left Div
+		var leftDiv = document.createElement("div");
+		leftDiv.setAttribute("class", "left")
+		mainDiv.appendChild(leftDiv);
+
+		// Slideri sola hərəkət etdirmək üçün link
+		var leftLink = document.createElement("a");
+		leftLink.setAttribute("onclick", "left();");
+		leftDiv.appendChild(leftLink);
+
+		// FontAwesome icon üçün
+		var fontLeftLink = document.createElement("i");
+		fontLeftLink.setAttribute("class", "fa fa-chevron-left");
+		leftLink.appendChild(fontLeftLink);
+
+
+		// Middle Div
+		var midDiv = document.createElement("div");
+		midDiv.setAttribute("class", "middle")
+		mainDiv.appendChild(midDiv);
+
+		// Böyük şəkil üçün div
+		var headerDiv = document.createElement("div");
+		headerDiv.setAttribute("class", "header");
+		midDiv.appendChild(headerDiv);
+
+		// Böyük şəkil
+		var bigImg = document.createElement("img");
+		bigImg.setAttribute("id", "bigImg");
+		bigImg.setAttribute("src", "images/1.jpg");
+		headerDiv.appendChild(bigImg);
+
+		// Kiçik şekiller üçün div
+		var listDiv = document.createElement("div");
+		listDiv.setAttribute("class", "list");
+		midDiv.appendChild(listDiv);
+
+		// Kiçik şəkillər
+		var imgList = ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"];
+
+		for(i=0;i<imgList.length;i++){
+
+			// Her kiçik şəkil üçün ayrı div
+			var listItemDiv = document.createElement("div");
+			listItemDiv.setAttribute("class", "listItem");
+			listDiv.appendChild(listItemDiv);
+
+			// kiçik şəkil 
+			var lilImg = document.createElement("img");
+			lilImg.setAttribute("onclick", "slider.img"+i+"();");
+			lilImg.setAttribute("src", imgList[i]);
+			listItemDiv.appendChild(lilImg);
+		}
+
+		// Right Div
+		var rightDiv = document.createElement("div");
+		rightDiv.setAttribute("class", "right");
+		mainDiv.appendChild(rightDiv);
+
+		// Slideri sağa hərəkət etdirmək üçün link
+		var rightLink = document.createElement("a");
+		rightLink.setAttribute("onclick", "right();");
+		rightDiv.appendChild(rightLink);
+
+		// FontAwesome icon üçün
+		var fontRightLink = document.createElement("i");
+		fontRightLink.setAttribute("class", "fa fa-chevron-right");
+		rightLink.appendChild(fontRightLink);
+
+
+		// Funksiyalar 
+
+		a = 0;
+		// sağa çevirme
+
+		function right(){
+			a++;
+			if(a > imgList.length - 1){
+				a = 0;
+			}
+			document.getElementById("bigImg").src=imgList[a];
+		}
+
+		// sola çevirme
+
+		function left(){
+			a--;
+			if(a < 0){
+				a = imgList.length - 1;
+			}
+			document.getElementById("bigImg").src=imgList[a];
+		}
+
+		// click olunanda açsın
+
+		var slider = {
+			img0: 	function bax(){
+						a=0;
+						document.getElementById("bigImg").src=imgList[a];
+					},
+			img1:	function bax1(){
+						a=1;
+						document.getElementById("bigImg").src=imgList[a];
+					},
+			img2:	function bax2(){
+						a=2;
+						document.getElementById("bigImg").src=imgList[a];
+					},
+			img3: 	function bax3(){
+						a=3;
+						document.getElementById("bigImg").src=imgList[a];
+					}
+			}
+
+	</script>
+</body>
+</html>

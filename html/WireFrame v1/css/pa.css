@@ -1,0 +1,231 @@
+/*
+	------------Reset-------------
+*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ul li {
+	list-style-type: none;
+}
+/*
+	------------Options-------------
+*/
+body {
+	background: url(../images/mainbg.jpg) no-repeat fixed;
+	font-family: "Raleway";
+}
+.tam {
+	width: 100%;
+}
+.orta {
+	width: 980px;
+	margin: 0 auto;
+}
+.clear {
+	clear: both;
+}
+.float {
+	float:left;
+}
+img {
+	opacity: 0.8;
+}
+img:hover {
+	opacity: 1.0;
+}
+/*
+	------------Color Options-------------
+*/
+.header, .nav ul li:hover, .active, .h1 ,.footer,.footerRight ul li a:hover, .footerLeft, .footerRight, .search button:hover, .contentRight a{
+	background: #E91E63;
+}
+.footerRight ul li a,.contentRight a, .search button,.footerRight ul li a, .nav ul li a, .contentLeft p, .contentRight p, .contentLeft h1, .contentRight h1, .footer h1, .news a{
+	color: #fff;
+}
+.contentRow, .nav ul li, .search button,.footerRight ul li a  {
+	background: #009688;
+}
+/*
+	------------Header-------------
+*/
+.header {
+	opacity: 0.9;
+	border-radius: 0px 0px 10px 10px;
+}
+/*
+	------------Logo-------------
+*/
+.logo-img {
+	width: 200px;
+	background: #fff;
+	border-radius: 50%;
+	border:1px solid #000;
+	margin: 40px;
+}
+.logo .logo-img img {
+	height: 198px;
+}
+/*
+	------------Search-------------
+*/
+.search {
+	float: right;
+	margin-top: 150px;
+}
+.search input {
+	padding: 10px 15px;
+	border: 1px solid #000;
+
+}
+.search button {
+	padding: 10px;
+	border: 1px solid #000;
+	border-left: none;
+	position: relative;
+	right: 5px;
+	cursor: pointer;
+}
+/*
+	------------Nav Menu-------------
+*/
+.nav {
+	height: 45px;
+	background-color: #00BCD4;
+	border-top: 1px solid #fff;
+}
+.nav li.last {
+	border-right: none;
+}
+.nav ul li {
+	float: left;
+	line-height: 29px;
+	border-right: 2px solid #fff;
+} 
+.nav ul li a {
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 8px 15px;
+}
+/*
+	------------Slider-------------
+*/
+.slider {
+	margin-top: 15px;
+}
+.slider .left img {
+	width: 650px;
+	border: 1px solid #00BCD4;
+}
+.slider .baner img {
+	float: left;
+	width: 325px;
+	border: 1px solid #00BCD4;
+}
+.slider .baner a {
+	cursor: pointer;
+}
+/*
+	------------Content Left-------------
+*/
+.contentLeft {
+	margin-top: 15px;
+	float: left;
+	width: 640px;
+}
+.contentLeft h1, .contentRight h1, .footer h1 {
+	font: 30px;
+	font-weight: 500;
+	margin-left: 15px;
+}
+.contentLeft p, .contentRight p {
+	font: 16px;
+	font-weight: 400;
+	margin: 10px;
+	text-indent: 10px;
+}
+.contentItem{
+	float: left;
+	width: 148px;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+.contentItem.last {
+	margin-right: 0;
+}
+.contentItem img {
+	width: 100%;
+}
+/*
+	------------Content Right-------------
+*/
+.contentRight {
+	float: right;
+	width: 330px;
+	margin-top: 15px;
+}
+.news {
+	margin-top: 15px;
+	height: 70px;
+}
+.contentRow .link {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+.news img {
+	height: 70px;
+	margin-right: 10px;
+	float: left;
+}
+.news p {
+	font-size: 11px;
+	text-indent: 0px;
+}
+.news a {
+	text-decoration: none;
+	padding: 10px;
+}
+/*
+	------------Footer-------------
+*/
+.footer {
+	margin-top: 15px;
+	height: 200px;
+}
+.footerLeft {
+	width: 480px;
+	float: left;
+}
+.footerLeft input {
+	display: block;
+	padding: 10px 15px;
+	margin-top: 10px;
+}
+.footerLeft button{
+	margin-left: 139px;
+	padding: 10px 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.footerRight {
+	float: right;
+	width: 480px;
+}
+.footerRight ul li {
+	float: right;
+	margin: 25px 10px;
+}
+.footerRight ul li:last {
+	margin-right: none;
+}
+.footerRight ul li a {	
+	padding: 15px;
+	display: inline-block;
+	border:1px solid #fff;
+	text-decoration: none;
+}
